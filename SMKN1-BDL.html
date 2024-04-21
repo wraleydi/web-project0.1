@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMKN 1 Bandar Lampung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/Logo-web-removebg-preview.png" alt="smkn1-bdl">
+        </div>
+        <nav class="navigasi">
+            <ul class="navbar-menu">
+                <li><a href="SMKN1-BDL.html">Beranda</a></li>
+                <li><a href="#program-studi">Program Studi</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+            <div class="toggle-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="description">
+                <h1 class="h1">
+                    <div>SMK Negeri 1</div>
+                    <div>Bandar Lampung</div>
+                </h1>
+                <p>
+                    SMK Negeri 1 Bandar Lampung merupakan Sekolah Pusat Keunggulan Dengan Lulusan Yang Berprestasi Di Bidangnya.
+                    Dengan jurusan yang memiliki standar industri sehingga dapat menunjang pembelajaran sesuai dengan dunia Industri.
+                </p>
+                <button>Lebih lanjut</button>
+            </div>
+            <aside class="side-1">
+                <div class="image">
+                    <img src="assets/SMK-Negeri-1-Bandar-Lampung.jpg" alt="smkn1-bdl-logo" width="300px">
+                </div>
+                <figcaption>
+                    Sejak didirikan pada tahun 1983, SMK Negeri 1 Bandar Lampung telah menjadi salah satu sekolah terbaik di Lampung dan berhasil meraih sejumlah penghargaan.
+                </figcaption>
+            </aside>
+        </div>
+        <article id="program-studi">
+            <div class="article-content">
+                <h1>Jurusan SMK Negeri 1 Bandar Lampung</h1>
+                <div class="wrapper">
+                    <div class="group" >
+                        <a href="#TKJ-content" class="clickable" onclick="showContent('TKJ-content')">
+                            <img src="assets/logo-TKJ-removebg-preview.png" alt="logo-TKJ" width="150px">
+                            <h3>Teknik Jaringan Komputer Telekomunikasi</h3>
+                            <figcaption>Program Studi pada bidang Teknologi Komputer Jaringan dan Telekomunikasi</figcaption>
+                        </a>
+                    </div>
+                    <div class="group" onclick="toggleArticle('AK-content')">
+                        <a href="#AK-content" class="clickable" onclick="showContent('AK-content')">
+                            <img src="assets/logo-AK-removebg-preview.png" alt="logo-Akutansi" width="150px">
+                            <h3>Akuntansi dan Keuangan Lembaga</h3>
+                            <figcaption>Program Studi pada bidang Keahlian Akuntansi dan Keuangan Lembaga</figcaption>
+                        </a>
+                    </div>
+                    <div class="group" onclick="toggleArticle()">
+                        <a href="#MPLB-content" class="clickable" onclick="showContent('MPLB-content')">
+                            <img src="assets/logo-MPLB-removebg-preview.png" alt="logo-Manajemen-Perkantoran" width="150px">
+                            <h3>Manajemen Perkantoran Pelayanan Bisnis</h3>
+                            <figcaption>Program Studi pada bidang Keahlian Manajemen Perkantoran Pelayanan Bisnis</figcaption>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#Animasi-content" class="clickable" onclick="showContent('Animasi-content')">
+                            <img src="assets/logo-Animasi-removebg-preview.png" alt="logo-Animasi" width="150px">
+                            <h3>Animasi</h3>
+                            <figcaption>Program Studi pada bidang Teknologi Animasi</figcaption>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#Pemasaran-content" class="clickable" onclick="showContent('Pemasaran-content')">
+                            <img src="assets/logo-PM-removebg-preview.png" alt="logo-Pemasaran" width="130px">
+                            <h3>Pemasaran</h3>
+                            <figcaption>Program Studi pada bidang Keahlian Pemasaran</figcaption>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#Tatabusana-content" class="clickable" onclick="showContent('Tatabusana-content')">
+                            <img src="assets/logo-tabus-removebg-preview.png" alt="logo-Tata-Busana" width="150px">
+                            <h3>Tata Busana</h3>
+                            <figcaption>Program Studi pada bidang Keahlian Tata Busana</figcaption>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#Tataboga-content" class="clickable" onclick="showContent('Tataboga-content')">
+                            <img src="assets/logo-Boga-removebg-preview.png" alt="logo-Tata-Boga" width="150px">
+                            <h3>Tata Boga</h3>
+                            <figcaption>Program Studi pada bidang Keahlian Tata Boga</figcaption>
+                        </a>
+                    </div>
+                    <div class="group">
+                        <a href="#DKV-content" class="clickable" onclick="showContent('DKV-content')">
+                            <img src="assets/logo-DKV-removebg-preview.png" alt="logo-DKV" width="150px">
+                            <h3>Desain Komunikasi Visual</h3>
+                            <figcaption>Program Studi pada bidang Teknologi Desain Komunikasi Visual</figcaption>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <hr>
+        <hr class="sc">
+        <hr class="thr">
+        <article id="article2" class="hidden">
+            <section id="TKJ-content">
+                <div class="group-section">
+                    <div class="section-description">
+                        <h1 class="title">
+                            <div>Teknik Komputer Jaringan</div>
+                            <div>dan Telekomunikasi</div>
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit mi at iaculis pellentesque. In lectus purus, accumsan ut efficitur quis, iaculis eget lorem. Curabitur turpis ipsum, 
+                            gravida at malesuada eget, porttitor non urna. Sed felis sapien, sollicitudin ut sagittis at, fermentum eget purus.
+                            Duis facilisis tortor sed eros vehicula, ut vestibulum lacus tristique. Donec sit amet odio fermentum, sollicitudin libero porta, vulputate diam. Duis sit amet elementum risus. Donec
+                            vitae facilisis mi. In vehicula, purus nec blandit pretium, ipsum arcu finibus sem, ac porta lorem urna sit amet elit. Nam leo felis, vulputate vel velit a, efficitur vestibulum enim. 
+                            Vivamus et ornare libero. Suspendisse fringilla, nisi quis faucibus pellentesque, nibh ipsum molestie ante, et varius velit nisi sit amet dolor. Donec rutrum orci sit amet commodo eleifend. 
+                            Sed eget gravida nulla, fringilla porttitor augue. Nunc quis est ac arcu posuere efficitur.
+                            Duis purus ante, auctor ullamcorper magna quis, rutrum gravida risus. Ut suscipit, quam vel vehicula aliquet, enim eros ultrices erat, et convallis ante massa id justo. Curabitur nunc tortor, interdum sed quam a, 
+                            luctus aliquet turpis. Nam maximus sed est at finibus. Morbi finibus sem ut urna fermentum condimentum. Sed ut aliquet nunc. Vestibulum a dolor vel massa egestas accumsan. Nunc interdum mollis eros, non mollis magna eleifend eu. 
+                            Donec interdum tempor urna molestie tincidunt.
+                        </P>
+                        <a href="#program-studi"><button>Jurusan laiinya</button></a>
+                    </div>
+                    <aside>
+                        <div class="tkj-image">
+                            <img src="assets/tjkt.png" alt="gambar-tkj" width="280px">
+                        </div>
+                        <figcaption class="capt">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </figcaption>
+                    </aside>
+                </div>
+            </section>
+            <section id="AK-content">
+                <div class="group-section">
+                    <div class="section-description">
+                        <h1 class="title">
+                            <div>Akuntansi dan Keuangan</div>
+                            <div>Lembaga</div>
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit mi at iaculis pellentesque. In lectus purus, accumsan ut efficitur quis, iaculis eget lorem. Curabitur turpis ipsum, 
+                            gravida at malesuada eget, porttitor non urna. Sed felis sapien, sollicitudin ut sagittis at, fermentum eget purus.
+                            Duis facilisis tortor sed eros vehicula, ut vestibulum lacus tristique. Donec sit amet odio fermentum, sollicitudin libero porta, vulputate diam. Duis sit amet elementum risus. Donec
+                            vitae facilisis mi. In vehicula, purus nec blandit pretium, ipsum arcu finibus sem, ac porta lorem urna sit amet elit. Nam leo felis, vulputate vel velit a, efficitur vestibulum enim. 
+                            Vivamus et ornare libero. Suspendisse fringilla, nisi quis faucibus pellentesque, nibh ipsum molestie ante, et varius velit nisi sit amet dolor. Donec rutrum orci sit amet commodo eleifend. 
+                            Sed eget gravida nulla, fringilla porttitor augue. Nunc quis est ac arcu posuere efficitur.
+                            Duis purus ante, auctor ullamcorper magna quis, rutrum gravida risus. Ut suscipit, quam vel vehicula aliquet, enim eros ultrices erat, et convallis ante massa id justo. Curabitur nunc tortor, interdum sed quam a, 
+                            luctus aliquet turpis. Nam maximus sed est at finibus. Morbi finibus sem ut urna fermentum condimentum. Sed ut aliquet nunc. Vestibulum a dolor vel massa egestas accumsan. Nunc interdum mollis eros, non mollis magna eleifend eu. 
+                            Donec interdum tempor urna molestie tincidunt.
+                        </P>
+                        <a href="#program-studi"><button>Jurusan laiinya</button></a>
+                    </div>
+                    <aside>
+                        <div class="tkj-image">
+                            <img src="assets/Akuntasi-image.jpg" alt="gambar-tkj" width="280px">
+                        </div>
+                        <figcaption class="capt">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </figcaption>
+                    </aside>
+                </div>
+            </section>
+            <section id="MPLB-content">
+                <div class="group-section">
+                    <div class="section-description">
+                        <h1 class="title">
+                            <div>Manajemen Perkantoran</div>
+                            <div>Pelayanan Bisnis</div>
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit mi at iaculis pellentesque. In lectus purus, accumsan ut efficitur quis, iaculis eget lorem. Curabitur turpis ipsum, 
+                            gravida at malesuada eget, porttitor non urna. Sed felis sapien, sollicitudin ut sagittis at, fermentum eget purus.
+                            Duis facilisis tortor sed eros vehicula, ut vestibulum lacus tristique. Donec sit amet odio fermentum, sollicitudin libero porta, vulputate diam. Duis sit amet elementum risus. Donec
+                            vitae facilisis mi. In vehicula, purus nec blandit pretium, ipsum arcu finibus sem, ac porta lorem urna sit amet elit. Nam leo felis, vulputate vel velit a, efficitur vestibulum enim. 
+                            Vivamus et ornare libero. Suspendisse fringilla, nisi quis faucibus pellentesque, nibh ipsum molestie ante, et varius velit nisi sit amet dolor. Donec rutrum orci sit amet commodo eleifend. 
+                            Sed eget gravida nulla, fringilla porttitor augue. Nunc quis est ac arcu posuere efficitur.
+                            Duis purus ante, auctor ullamcorper magna quis, rutrum gravida risus. Ut suscipit, quam vel vehicula aliquet, enim eros ultrices erat, et convallis ante massa id justo. Curabitur nunc tortor, interdum sed quam a, 
+                            luctus aliquet turpis. Nam maximus sed est at finibus. Morbi finibus sem ut urna fermentum condimentum. Sed ut aliquet nunc. Vestibulum a dolor vel massa egestas accumsan. Nunc interdum mollis eros, non mollis magna eleifend eu. 
+                            Donec interdum tempor urna molestie tincidunt.
+                        </P>
+                        <a href="#program-studi"><button>Jurusan laiinya</button></a>
+                    </div>
+                    <aside>
+                        <div class="tkj-image">
+                            <img src="assets/MPLB-image.jpg" alt="gambar-tkj" width="280px">
+                        </div>
+                        <figcaption class="capt">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </figcaption>
+                    </aside>
+                </div>
+            </section>
+            <section id="Animasi-content">
+                <div class="group-section">
+                    <div class="section-description">
+                        <h1 class="title">
+                            <div>Animasi</div>
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit mi at iaculis pellentesque. In lectus purus, accumsan ut efficitur quis, iaculis eget lorem. Curabitur turpis ipsum, 
+                            gravida at malesuada eget, porttitor non urna. Sed felis sapien, sollicitudin ut sagittis at, fermentum eget purus.
+                            Duis facilisis tortor sed eros vehicula, ut vestibulum lacus tristique. Donec sit amet odio fermentum, sollicitudin libero porta, vulputate diam. Duis sit amet elementum risus. Donec
+                            vitae facilisis mi. In vehicula, purus nec blandit pretium, ipsum arcu finibus sem, ac porta lorem urna sit amet elit. Nam leo felis, vulputate vel velit a, efficitur vestibulum enim. 
+                            Vivamus et ornare libero. Suspendisse fringilla, nisi quis faucibus pellentesque, nibh ipsum molestie ante, et varius velit nisi sit amet dolor. Donec rutrum orci sit amet commodo eleifend. 
+                            Sed eget gravida nulla, fringilla porttitor augue. Nunc quis est ac arcu posuere efficitur.
+                            Duis purus ante, auctor ullamcorper magna quis, rutrum gravida risus. Ut suscipit, quam vel vehicula aliquet, enim eros ultrices erat, et convallis ante massa id justo. Curabitur nunc tortor, interdum sed quam a, 
+                            luctus aliquet turpis. Nam maximus sed est at finibus. Morbi finibus sem ut urna fermentum condimentum. Sed ut aliquet nunc. Vestibulum a dolor vel massa egestas accumsan. Nunc interdum mollis eros, non mollis magna eleifend eu. 
+                            Donec interdum tempor urna molestie tincidunt.
+                        </P>
+                        <a href="#program-studi"><button>Jurusan laiinya</button></a>
+                    </div>
+                    <aside>
+                        <div class="tkj-image">
+                            <img src="assets/Animasi-image.jpeg" alt="gambar-tkj" width="280px">
+                        </div>
+                        <figcaption class="capt">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </figcaption>
+                    </aside>
+                </div>
+            </section>
+            <section id="Pemasaran-content">
+                <div class="group-section">
+                    <div class="section-description">
+                        <h1 class="title">
+                            <div>Pemasaran</div>
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit mi at iaculis pellentesque. In lectus purus, accumsan ut efficitur quis, iaculis eget lorem. Curabitur turpis ipsum, 
+                            gravida at malesuada eget, porttitor non urna. Sed felis sapien, sollicitudin ut sagittis at, fermentum eget purus.
+                            Duis facilisis tortor sed eros vehicula, ut vestibulum lacus tristique. Donec sit amet odio fermentum, sollicitudin libero porta, vulputate diam. Duis sit amet elementum risus. Donec
+                            vitae facilisis mi. In vehicula, purus nec blandit pretium, ipsum arcu finibus sem, ac porta lorem urna sit amet elit. Nam leo felis, vulputate vel velit a, efficitur vestibulum enim. 
+                            Vivamus et ornare libero. Suspendisse fringilla, nisi quis faucibus pellentesque, nibh ipsum molestie ante, et varius velit nisi sit amet dolor. Donec rutrum orci sit amet commodo eleifend. 
+                            Sed eget gravida nulla, fringilla porttitor augue. Nunc quis est ac arcu posuere efficitur.
+                            Duis purus ante, auctor ullamcorper magna quis, rutrum gravida risus. Ut suscipit, quam vel vehicula aliquet, enim eros ultrices erat, et convallis ante massa id justo. Curabitur nunc tortor, interdum sed quam a, 
+                            luctus aliquet turpis. Nam maximus sed est at finibus. Morbi finibus sem ut urna fermentum condimentum. Sed ut aliquet nunc. Vestibulum a dolor vel massa egestas accumsan. Nunc interdum mollis eros, non mollis magna eleifend eu. 
+                            Donec interdum tempor urna molestie tincidunt.
+                        </P>
+                        <a href="#program-studi"><button>Jurusan laiinya</button></a>
+                    </div>
+                    <aside>
+                        <div class="tkj-image">
+                            <img src="assets/Pemasaran-image.jpg" alt="gambar-tkj" width="280px">
+                        </div>
+                        <figcaption class="capt">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </figcaption>
+                    </aside>
+                </div>
+            </section>
+            <section id="Tatabusana-content">
+                <div class="group-section">
+                    <div class="section-description">
+                        <h1 class="title">
+                            <div>Tata Busana</div>
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit mi at iaculis pellentesque. In lectus purus, accumsan ut efficitur quis, iaculis eget lorem. Curabitur turpis ipsum, 
+                            gravida at malesuada eget, porttitor non urna. Sed felis sapien, sollicitudin ut sagittis at, fermentum eget purus.
+                            Duis facilisis tortor sed eros vehicula, ut vestibulum lacus tristique. Donec sit amet odio fermentum, sollicitudin libero porta, vulputate diam. Duis sit amet elementum risus. Donec
+                            vitae facilisis mi. In vehicula, purus nec blandit pretium, ipsum arcu finibus sem, ac porta lorem urna sit amet elit. Nam leo felis, vulputate vel velit a, efficitur vestibulum enim. 
+                            Vivamus et ornare libero. Suspendisse fringilla, nisi quis faucibus pellentesque, nibh ipsum molestie ante, et varius velit nisi sit amet dolor. Donec rutrum orci sit amet commodo eleifend. 
+                            Sed eget gravida nulla, fringilla porttitor augue. Nunc quis est ac arcu posuere efficitur.
+                            Duis purus ante, auctor ullamcorper magna quis, rutrum gravida risus. Ut suscipit, quam vel vehicula aliquet, enim eros ultrices erat, et convallis ante massa id justo. Curabitur nunc tortor, interdum sed quam a, 
+                            luctus aliquet turpis. Nam maximus sed est at finibus. Morbi finibus sem ut urna fermentum condimentum. Sed ut aliquet nunc. Vestibulum a dolor vel massa egestas accumsan. Nunc interdum mollis eros, non mollis magna eleifend eu. 
+                            Donec interdum tempor urna molestie tincidunt.
+                        </P>
+                        <a href="#program-studi"><button>Jurusan laiinya</button></a>
+                    </div>
+                    <aside>
+                        <div class="tkj-image">
+                            <img src="assets/Tabus-image.jpg" alt="gambar-tkj" width="280px">
+                        </div>
+                        <figcaption class="capt">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </figcaption>
+                    </aside>
+                </div>
+            </section>
+            <section id="Tataboga-content">
+                <div class="group-section">
+                    <div class="section-description">
+                        <h1 class="title">
+                            <div>Tata Boga</div>
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit mi at iaculis pellentesque. In lectus purus, accumsan ut efficitur quis, iaculis eget lorem. Curabitur turpis ipsum, 
+                            gravida at malesuada eget, porttitor non urna. Sed felis sapien, sollicitudin ut sagittis at, fermentum eget purus.
+                            Duis facilisis tortor sed eros vehicula, ut vestibulum lacus tristique. Donec sit amet odio fermentum, sollicitudin libero porta, vulputate diam. Duis sit amet elementum risus. Donec
+                            vitae facilisis mi. In vehicula, purus nec blandit pretium, ipsum arcu finibus sem, ac porta lorem urna sit amet elit. Nam leo felis, vulputate vel velit a, efficitur vestibulum enim. 
+                            Vivamus et ornare libero. Suspendisse fringilla, nisi quis faucibus pellentesque, nibh ipsum molestie ante, et varius velit nisi sit amet dolor. Donec rutrum orci sit amet commodo eleifend. 
+                            Sed eget gravida nulla, fringilla porttitor augue. Nunc quis est ac arcu posuere efficitur.
+                            Duis purus ante, auctor ullamcorper magna quis, rutrum gravida risus. Ut suscipit, quam vel vehicula aliquet, enim eros ultrices erat, et convallis ante massa id justo. Curabitur nunc tortor, interdum sed quam a, 
+                            luctus aliquet turpis. Nam maximus sed est at finibus. Morbi finibus sem ut urna fermentum condimentum. Sed ut aliquet nunc. Vestibulum a dolor vel massa egestas accumsan. Nunc interdum mollis eros, non mollis magna eleifend eu. 
+                            Donec interdum tempor urna molestie tincidunt.
+                        </P>
+                        <a href="#program-studi"><button>Jurusan laiinya</button></a>
+                    </div>
+                    <aside>
+                        <div class="tkj-image">
+                            <img src="assets/tataboga-image.jpg" alt="gambar-tkj" width="280px">
+                        </div>
+                        <figcaption class="capt">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </figcaption>
+                    </aside>
+                </div>
+            </section>
+            <section id="DKV-content">
+                <div class="group-section">
+                    <div class="section-description">
+                        <h1 class="title">
+                            <div>Desain Komunikasi Visual</div>
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit mi at iaculis pellentesque. In lectus purus, accumsan ut efficitur quis, iaculis eget lorem. Curabitur turpis ipsum, 
+                            gravida at malesuada eget, porttitor non urna. Sed felis sapien, sollicitudin ut sagittis at, fermentum eget purus.
+                            Duis facilisis tortor sed eros vehicula, ut vestibulum lacus tristique. Donec sit amet odio fermentum, sollicitudin libero porta, vulputate diam. Duis sit amet elementum risus. Donec
+                            vitae facilisis mi. In vehicula, purus nec blandit pretium, ipsum arcu finibus sem, ac porta lorem urna sit amet elit. Nam leo felis, vulputate vel velit a, efficitur vestibulum enim. 
+                            Vivamus et ornare libero. Suspendisse fringilla, nisi quis faucibus pellentesque, nibh ipsum molestie ante, et varius velit nisi sit amet dolor. Donec rutrum orci sit amet commodo eleifend. 
+                            Sed eget gravida nulla, fringilla porttitor augue. Nunc quis est ac arcu posuere efficitur.
+                            Duis purus ante, auctor ullamcorper magna quis, rutrum gravida risus. Ut suscipit, quam vel vehicula aliquet, enim eros ultrices erat, et convallis ante massa id justo. Curabitur nunc tortor, interdum sed quam a, 
+                            luctus aliquet turpis. Nam maximus sed est at finibus. Morbi finibus sem ut urna fermentum condimentum. Sed ut aliquet nunc. Vestibulum a dolor vel massa egestas accumsan. Nunc interdum mollis eros, non mollis magna eleifend eu. 
+                            Donec interdum tempor urna molestie tincidunt.
+                        </P>
+                        <a href="#program-studi"><button>Jurusan laiinya</button></a>
+                    </div>
+                    <aside>
+                        <div class="tkj-image">
+                            <img src="assets/DKV-image.png" alt="gambar-tkj" width="280px">
+                        </div>
+                        <figcaption class="capt">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </figcaption>
+                    </aside>
+                </div>
+            </section>
+        </article>
+        <article>
+            <div class="read-more">
+                <h1 class="read-more-title">
+                    <div>Ingin Lebih Tau</div>
+                    <div>Tentang SMK 1</div>
+                </h1>
+                <div class="btn-read-more">
+                    <a href="#"><button>Read More</button></a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="info-footer">
+                <img src="assets/Logo-web-removebg-preview.png" alt="SMKN-1-BDL" width="300px">
+                <ul>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+            <p>
+                &#169; SMK Negeri 1 Bandar Lampung, With By Raleydi Wardhana, All rights reserved. 
+            </p>
+        </div>
+    </footer>
+    <script>
+        function showContent(contentId) {
+    // Menampilkan Artikel Kedua
+    document.getElementById("article2").classList.remove("hidden");
+    // Menampilkan konten yang sesuai dari Artikel Kedua dan menyembunyikan yang lainnya
+    var sections = document.querySelectorAll("#article2 > section");
+    for (var i = 0; i < sections.length; i++) {
+        if (sections[i].id === contentId) {
+        sections[i].style.display = "block";
+        } else {
+        sections[i].style.display = "none";
+        }
+    }
+}
+    </script>
+</body>
+</html>
