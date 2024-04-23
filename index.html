@@ -28,6 +28,12 @@
             <div class="toggle-menu">
                 <i class="fas fa-bars"></i>
             </div>
+            <div class="navbar-new">
+                <li><a href="SMKN1-BDL.html">Beranda</a></li>
+                <li><a href="#program-studi">Program Studi</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </div>
         </nav>
     </header>
     <main>
@@ -384,10 +390,19 @@
         </div>
     </footer>
     <script>
+        const tombolMenu = document.querySelector('.toggle-menu')
+        const navBaru = document.querySelector('.navbar-new')
+
+        tombolMenu.onclick = function () {
+            navBaru.classList.toggle('is-active')
+        }
+
+        window.onscroll = function() {
+    navBaru.classList.remove('is-active');
+};
+
         function showContent(contentId) {
-    // Menampilkan Artikel Kedua
     document.getElementById("article2").classList.remove("hidden");
-    // Menampilkan konten yang sesuai dari Artikel Kedua dan menyembunyikan yang lainnya
     var sections = document.querySelectorAll("#article2 > section");
     for (var i = 0; i < sections.length; i++) {
         if (sections[i].id === contentId) {
