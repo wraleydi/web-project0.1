@@ -13,8 +13,9 @@ body {
 
 .navbar {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     padding-block: 1rem;
+    padding-inline: 2rem;
     margin-block-end: 1rem;
     margin-inline: auto;
     display: flex;
@@ -69,8 +70,9 @@ body {
 main {
     flex: 1;
     width: 100%;
-    max-width: 1200px;
-    margin-inline: auto;
+    max-width: 1400px;
+    margin: auto;
+    padding-inline: 2rem;
     padding-block: 2rem;
     display: flex;
     flex-direction: column;
@@ -97,7 +99,7 @@ main .content .description {
 .description p {
     font-size: 1rem;
     line-height: 1.5rem;
-    margin-inline-end: 3rem;
+    margin-inline-end: 10rem;
 }
 
 .description button {
@@ -274,6 +276,7 @@ section .section-description p::first-letter {
     padding: 0.5rem 1.5rem;
     background-color: #524fd5;
     border-radius: 3rem;
+    transition: 0.2s ease-in-out;
 }
 
 .section-description button:hover {
@@ -308,7 +311,7 @@ hr:hover {
 
 .read-more {
     background-color: #524fd5;
-    padding: 8rem 20rem;
+    padding: 7rem 18rem;
     border-radius: 3rem;
     margin-block-start: 6rem;
     box-shadow: 0 0 20px black;
@@ -413,7 +416,7 @@ footer .footer {
     justify-content: center;
 }
 
-@media (max-width: 800px){
+@media (max-width: 878px){
     .navigasi .navbar-menu {
         display: none;
     }
@@ -429,19 +432,66 @@ footer .footer {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 878px){
     main .content {
         display: flex;
         flex-direction: column;
-        margin: 2rem;
     }
 
     .content .description p {
         margin-block-start: 2rem;
+        margin-inline-end: 0;
     }
 
     .content button {
         width: 100%;
         margin-block: 1rem 3rem;
+    }
+
+    article .article-content h1 {
+        text-align: center;
+    }
+
+    
+
+    .article-content .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper .group {
+        margin: auto;
+        margin-block-end: 2rem;
+    }
+
+    article .read-more {
+        padding: 2rem 6rem;
+    }
+
+    .read-more .read-more-title {
+        text-align: center;
+    }
+
+    footer .footer .info-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-footer ul {
+        padding: 0;
+    }
+
+    section .group-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .group-section .section-description p {
+        margin-inline-end: 0;
+    }
+
+    .group-section aside {
+        margin-block-start: 2rem;
     }
 }
