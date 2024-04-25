@@ -10,8 +10,8 @@ const tombolMenu = document.querySelector('.toggle-menu')
 };
 
         function showContent(contentId) {
-    document.getElementById("article2").classList.remove("hidden");
-    var sections = document.querySelectorAll("#article2 > section");
+    document.getElementById("article-studi").classList.remove("hidden");
+    var sections = document.querySelectorAll("#article-studi > section");
     for (var i = 0; i < sections.length; i++) {
         if (sections[i].id === contentId) {
         sections[i].style.display = "block";
