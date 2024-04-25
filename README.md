@@ -1,2 +1,2 @@
 # web-project0.1
-project website
+project website ini saya buat berdasarkan tugas akhir "dicoding". dengan Tema website sekolah
