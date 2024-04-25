@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -561,17 +565,30 @@ footer .footer {
         font-size: 0.8rem;
     }
 
+    .group-section .section-content .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
     section .group-section {
         display: flex;
         flex-direction: column;
     }
 
-    .group-section .section-description p {
+    section .main-content .description-content {
+        margin: 0rem;
+    }
+
+    .group-section .description-content p {
         margin-inline-end: 0;
     }
 
     .group-section aside {
         margin-block-start: 2rem;
+    }
+
+    .group-section .section-content button {
+        margin-block-start: 3rem;
     }
 }
 
@@ -580,21 +597,8 @@ footer .footer {
         padding: 1.5rem 3rem;
     }
 
-    section .group-section p {
-        border-radius: 0;
-    }
-
-    section .group-section aside {
-        border-radius: 0;
-    }
-}
-
-@media (max-width: 382px){
-    section .group-section p {
-        border-radius: 0;
-    }
-
-    section .group-section aside {
-        border-radius: 0;
-    }
+    section .section-content aside {
+        font-size: 1rem;
+        padding: 1.2rem;
+    } 
 }
