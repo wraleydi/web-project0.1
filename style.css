@@ -214,64 +214,73 @@ article, section {
 
 section .title {
     font-size: 2rem;
-    line-height: 3.5rem;
+    line-height: 3rem;
     text-align: center;
     font-family: 'Sedan', 'Poppins', sans-serif;
     margin-block-end: 0;
+    margin-block-start: 5rem;
     color: black;
 }
 
-section .group-section{
+section .main-content {
     display: flex;
-    flex: 1;
-    margin-block-start: 2rem;
-    align-items: stretch;
-    padding: 2rem;
 }
 
-section .section-description {
+section .description-content {
     flex: 1;
 }
 
-section .section-description p {
-    line-height: 1.5rem;
-    color: white;
-    line-height: 1.7rem;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.1rem;
-    background-color: #222227;
+section .main-content .description-content {
     margin-inline-end: 3rem;
-    padding: 2rem 3rem 3rem 3rem;
+    padding: 1rem 2rem 2rem 2rem;
     border-radius: 3rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
-section .section-description p::first-letter {
-    font-size: 300%;
-    font-weight: bold;
+section .main-content .description-content h2 {
+    padding-block-end: 1rem;
+    margin-block-start: 3rem;
+    color: #524fd5;
+    font-size: 1.4rem;
 }
 
-.group-section aside figcaption {
+section .main-content .description-content p {
+    line-height: 1.5rem;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+
+section .main-content .description-content li {
+    margin-block: 2rem;
+    font-size: 1.1rem;
+}
+
+.section-content aside figcaption {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.7rem;
+    color: white;
 }
 
-.group-section aside {
+.section-content aside {
     width: 100%;
     flex: 0;
+    flex-direction: column;
     text-align: center;
+    align-self: center;
     padding: 2rem;
     border-radius: 3rem;
+    background-color: #222227;
     box-shadow: 0 0 20px black;
 }
 
-.section-description a {
+.group-section a {
     text-decoration: none;
 }
 
-.section-description button {
+.group-section button {
     display: flex;
     margin: auto;
-    margin-block-start: 2rem;
+    margin-block-end: 3rem;
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
@@ -281,9 +290,10 @@ section .section-description p::first-letter {
     background-color: #524fd5;
     border-radius: 3rem;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.section-description button:hover {
+.group-section button:hover {
     background-color: transparent;
     border: 3px solid #524fd5;
     color: #524fd5;
@@ -568,5 +578,23 @@ footer .footer {
 @media (max-width: 412px){
     article .read-more {
         padding: 1.5rem 3rem;
+    }
+
+    section .group-section p {
+        border-radius: 0;
+    }
+
+    section .group-section aside {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 382px){
+    section .group-section p {
+        border-radius: 0;
+    }
+
+    section .group-section aside {
+        border-radius: 0;
     }
 }
